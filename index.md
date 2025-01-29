@@ -7,14 +7,22 @@ layout: default
 
 <center>
 # Data Center Cooling System Optimization Using Offline Reinforcement Learning
+</center>
 
+<center>
 Xianyuan Zhan<sup>1,2∗†</sup>, Xiangyu Zhu<sup>1∗</sup>, Peng Cheng<sup>1</sup>, Xiao Hu<sup>1</sup>, Ziteng He<sup>1</sup>, Hanfei Geng<sup>1</sup>, Jichao Leng<sup>1</sup>, Huiwen Zheng<sup>3</sup>, Chenhui Liu<sup>3</sup>, Tianshun Hong<sup>3</sup>, Yan Liang<sup>3</sup>, Yunxin Liu<sup>1,2†</sup>, Feng Zhao<sup>1†</sup>
- 
+</center>
+
+<center>
 <sup>1</sup> Institute for AI Industry Research, Tsinghua University
 <sup>2</sup> Shanghai Artificial Intelligence Laboratory 3 Global Data Solutions Co., Ltd.
+</center>
 
+<center>
 {zhanxianyuan, liuyunxin}@air.tsinghua.edu.cn, fz@alum.mit.edu 
+</center>
 
+<center>
 **Publication:** The Thirteenth International Conference on Learning Representations (ICLR 2025) 
 **[📄 论文链接](https://arxiv.org/html/2501.15085v1)**  
 </center>
