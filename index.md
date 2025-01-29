@@ -60,6 +60,7 @@ The recent advances in information technology and artificial intelligence have f
 <br>
 The physics-informed offline RL framework for energy-efficient DC cooling control
 </center>
+<br><br>
 
 ![alg_fram](./doc/alg_framework.png)
 
