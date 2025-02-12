@@ -14,6 +14,20 @@ layout: default
   .s-text {
     font-size: 20px;
   }
+  .custom-button {
+    background-color: black;  /* 设置背景颜色为黑色 */
+    color: white;  /* 设置文字颜色为白色，确保可读性 */
+    padding:5px 20px;  /* 可选：设置内边距 */
+    border-radius: 20px;  /* 可选：设置圆角 */
+    text-decoration: none;  /* 去掉链接的下划线 */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.custom-button i {
+    margin-right: 8px;  /* 可选：给图标和文本之间添加间距 */
+  }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -26,7 +40,7 @@ Using Offline Reinforcement Learning
 </span>
 <br><br>
 <span class="s-text">
-Xianyuan Zhan<sup>1,2∗†</sup>, Xiangyu Zhu<sup>1∗</sup>, Peng Cheng<sup>1</sup>, Xiao Hu<sup>1</sup>, Ziteng He<sup>1</sup>, Hanfei Geng<sup>1</sup>, Jichao Leng<sup>1</sup>, Huiwen Zheng<sup>3</sup>, Chenhui Liu<sup>3</sup>, Tianshun Hong<sup>3</sup>, Yan Liang<sup>3</sup>, Yunxin Liu<sup>1,2†</sup>, Feng Zhao<sup>1†</sup>
+<a href="https://zhanxianyuan.xyz/" target="_blank">Xianyuan Zhan<sup>1,2∗†</sup></a>, <a href="https://air-dream.netlify.app/author/xiangyu-zhu/" target="_blank">Xiangyu Zhu<sup>1∗</sup></a>, Peng Cheng<sup>1</sup>, Xiao Hu<sup>1</sup>, Ziteng He<sup>1</sup>, Hanfei Geng<sup>1</sup>, Jichao Leng<sup>1</sup>, Huiwen Zheng<sup>3</sup>, Chenhui Liu<sup>3</sup>, Tianshun Hong<sup>3</sup>, Yan Liang<sup>3</sup>, Yunxin Liu<sup>1,2†</sup>, Feng Zhao<sup>1†</sup>
 <br><br>
 <sup>1</sup> Institute for AI Industry Research, Tsinghua University
 <br>
@@ -39,7 +53,7 @@ Xianyuan Zhan<sup>1,2∗†</sup>, Xiangyu Zhu<sup>1∗</sup>, Peng Cheng<sup>1<
 <b>Publication:</b> The Thirteenth International Conference on Learning Representations (ICLR 2025) 
 <br>
 <!-- <a href="https://arxiv.org/html/2501.15085v1">📄 论文链接</a> -->
-<a href="https://arxiv.org/html/2501.15085v1" class="external-link button is-normal is-rounded is-dark" target="_blank">
+<a href="https://arxiv.org/html/2501.15085v1" class="external-link button is-normal is-rounded custom-button" target="_blank">
     <i class="fas fa-file-pdf"></i> arXiv
 </a>
 </span>
@@ -69,7 +83,7 @@ The recent advances in information technology and artificial intelligence have f
 <span class="m-text">
 <b>Method</b>
 </span>
-<br>
+<br><br>
 <span class="s-text">
 The physics-informed offline RL framework for energy-efficient DC cooling control
 </span>
@@ -78,8 +92,6 @@ The physics-informed offline RL framework for energy-efficient DC cooling contro
 - A safety-aware reward function to balance energy saving and temperature regulation;
 - A special T-symmetry enforced thermal dynamics model (TTDM) to model and explain the fundamental thermal dynamics patterns inside the server room;
 - A highly sample-efficient offline RL algorithm for energy-efficient DC cooling control by integrating the properties of the learned TTDM.
-
-<br><br>
 
 ![alg_fram](./doc/alg_framework.png)
 
@@ -92,7 +104,7 @@ Experimental Results
 </b>
 </span>
 </center>
-
+<br><br>
 <center>
 <span class="s-text">
 Significant energy efficiency improvement
@@ -115,13 +127,13 @@ We conducted two 24-hour experiments in the production DC environment to compare
 <div style="display: flex; justify-content: space-between; gap: 15px;">
     <div style="text-align: center;">
         <h3 style="font-size: 12px; color: blue">PID Controller<br>2024-05-14 00:00 – 24:00</h3>
-        <video width="100%" controls autoplay>
+        <video width="100%" controls autoplay loop>
             <source src="./doc/pid_401_0514_x3.mp4" type="video/mp4">
         </video>
     </div>
     <div style="text-align: center; color: green">
         <h3 style="font-size: 12px;">Ours<br>2024-06-30 00:00 – 24:00</h3>
-        <video width="100%" controls autoplay>
+        <video width="100%" controls autoplay loop>
             <source src="./doc/ai_401_0630_x3.mp4" type="video/mp4">
         </video>
     </div>
