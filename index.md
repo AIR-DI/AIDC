@@ -12,6 +12,9 @@ layout: default
     font-size: 30px;
   }
   .s-text {
+    font-size: 25px;
+  }
+  .name-text {
     font-size: 20px;
   }
   .custom-button {
@@ -23,6 +26,10 @@ layout: default
     display: inline-flex;
     align-items: center;
     justify-content: center;
+  p {
+        margin-top: 30px;   /* 设置段落顶部的间距 */
+        margin-bottom: 20px; /* 设置段落底部的间距 */
+    }
   }
 
 .custom-button i {
@@ -39,7 +46,7 @@ Using Offline Reinforcement Learning
 </b>
 </span>
 <br><br>
-<span class="s-text">
+<span class="name-text">
 <a href="https://zhanxianyuan.xyz/" target="_blank">Xianyuan Zhan<sup>1,2∗†</sup></a>, <a href="https://air-dream.netlify.app/author/xiangyu-zhu/" target="_blank">Xiangyu Zhu<sup>1∗</sup></a>, Peng Cheng<sup>1</sup>, Xiao Hu<sup>1</sup>, Ziteng He<sup>1</sup>, Hanfei Geng<sup>1</sup>, Jichao Leng<sup>1</sup>, Huiwen Zheng<sup>3</sup>, Chenhui Liu<sup>3</sup>, Tianshun Hong<sup>3</sup>, Yan Liang<sup>3</sup>, Yunxin Liu<sup>1,2†</sup>, Feng Zhao<sup>1†</sup>
 <br><br>
 <sup>1</sup> Institute for AI Industry Research, Tsinghua University
@@ -83,10 +90,12 @@ The recent advances in information technology and artificial intelligence have f
 <span class="m-text">
 <b>Method</b>
 </span>
-<br><br>
+<!-- <br><br> -->
+<p>
 <span class="s-text">
 The physics-informed offline RL framework for energy-efficient DC cooling control
 </span>
+</p>
 </center>
 
 - A safety-aware reward function to balance energy saving and temperature regulation;
@@ -104,22 +113,26 @@ Experimental Results
 </b>
 </span>
 </center>
-<br><br>
+<!-- <br><br> -->
 <center>
+<p>
 <span class="s-text">
 Significant energy efficiency improvement
 </span>
+</p>
 </center>
 
 Comparison of conventional PID control and our approach under comparable server load settings on two server rooms of the commercial DC. “AEP” and “EC” denote average electric power and energy consumption, respectively. We use the offline RL policy to control 4, 6, and all the ACUs in each room. ACLF is the air-side cooling load factor, calculated as the ratio of energy consumption of ACUs to servers, the lower the better.
 ![table1](./doc/table.png)
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Control quality
 </span>
+</p>
 </center>
 
 We conducted two 24-hour experiments in the production DC environment to compare the temperature field distribution under the PID controller and our method. The tow videos below shows the visualization of temperature field changes during the two experiments. The temperature field distribution under the control of our model is more uniform and fluctuates less.
@@ -152,12 +165,14 @@ We conducted consecutive 48-hour experiments to compare the control behaviors of
 Comparisons of key system metrics and the controllable actions of our method and the PID controller over 2-day testing periods in Server Room B. Figures on the left show results from the PID-controlled period (May 13-15, 2024), and figures on the right are the results controlled by our method (June 29- July 1, 2024).
 </center>
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Long-term control performance
 </span>
+</p>
 </center>
 
 To verify the long-term robustness and energy-saving effectiveness of our method, we conducted two 14-day experiments by continuously running our offline RL policy and the PID controller on the 4 controllable ACUs in Server Room B.
@@ -172,12 +187,14 @@ To verify the long-term robustness and energy-saving effectiveness of our method
 Results of the 14-day long-term experiments in Server Room B. <b>a</b>, ACLF values under different total server loads. <b>b, c,</b> Temperature distribution of the directly influenced hot and cold aisles.
 </center>
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Impact of the number of controlled ACUs
 </span>
+</p>
 </center>
 
 We also conducted additional experiments with our model controlling 1 to all ACUs to further investigate its energy-saving impact. **a** shows the experiment results conducted in seven morning periods (10:30- 13:30) in Server Room A; **b,c** on the right show the experiment results conducted in seven morning (10:30- 13:30) and afternoon (14:30- 17:30) periods in Server Room B. These promising results suggest that if more ACUs can be controlled by our method, it is very likely that we can achieve even higher energy efficiency.
@@ -188,12 +205,14 @@ We also conducted additional experiments with our model controlling 1 to all ACU
 The energy-saving impact of controlling different numbers of ACUs through our approach.
 </center>
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Good adaptability under drastic server load fluctuation
 </span>
+</p>
 </center>
 
 To further evaluate the adaptability and load-awareness of our method, we tested on a specific scenario with drastic server load fluctuations in Server Room B. The PID controller demonstrates limited adaptability in this scenario, with no adjustments to fan speeds and only marginal changes in valve opening percentage. In contrast, our offline RL approach was able to promptly adapt to external changes, resulting in a more optimal and energy-efficient strategy. These results underscore the effectiveness and adaptability of our approach in highly dynamic DC service conditions. 
@@ -204,12 +223,14 @@ To further evaluate the adaptability and load-awareness of our method, we tested
 ACU control behaviors of our method and the PID controller under drastic server load fluctuation.  <b>a,</b> Load variation pattern of three server racks (Rack C, D, E) during the selected time period, with one server rack having a drastic load drop and increase. <b>b,</b> Temperature readings from the three most relevant cold aisle sensors.<b>c, d,</b> The variations in fan speed and valve opening for two ACUs during the time period, with one controlled by the PID controller (ACU 1-1) and the other by our method (ACU 1-2).
 </center>
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Comparative evaluation against baseline methods
 </span>
+</p>
 </center>
 
 As testing in the production DC environment suffers lots of restrictions, to further validate our method, we conducted extensive exploratory experiments and model ablations in our testbed environment.
@@ -232,12 +253,14 @@ System deployment in real-world
 </span>
 </center>
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Overall architecture of the deployment system
 </span>
+</p>
 </center>
 
 We have developed a full-function software system to facilitate the deployment and validation of our proposed physics-informed offline RL framework. The overall deployed system architecture is illustrated as below, which consists of two main phases: **offline training** and **online deployment**.
@@ -250,12 +273,14 @@ We have developed a full-function software system to facilitate the deployment a
 - **Offline training**: the historical operational data of the floor-level cooling systems is exported from the DC log management system. The exported data undergoes automated data processing and feature engineering processes and is stored in a historical dataset. Then we train the T-symmetry enforced thermal dynamics model, followed by a sample-efficient offline policy learning module to obtain the optimized floor-level cooling control policy. 
 - **Online deployment**:  the learned policy is deployed in a local policy server within the data center to provide control services. Real-time data from the cooling systems is retrieved by the management system API, processed, and stored in a real-time database. The system then forwards the real-time data to the policy server, which outputs optimized ACU control actions. These optimized control actions are directly written into the ACUs via the Modbus protocol for closed-loop control.
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Real-world testing environments
 </span>
+</p>
 </center>
 
 - **Production data center envirnment**
@@ -284,12 +309,14 @@ Real-world testing environments
 <b>a</b>, Illustration of the installed temperature and humidity sensors in our testbed. <b>b,</b> Layout illustration of the testbed.
 </center>
 
-<br><br>
+<!-- <br><br> -->
 
 <center>
+<p>
 <span class="s-text">
 Historical dataset distributions
 </span>
+</p>
 </center>
 
 Below shows the historical dataset distributions collected from our real-world testbed, in which we collect system operational data from more diverse server load and control settings, resulting in relatively broader state-action space coverage than that of the production DCs. 
