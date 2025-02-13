@@ -30,8 +30,14 @@ layout: default
   p {
         margin-top: 40px;   /* 设置段落顶部的间距 */
         margin-bottom: 20px; /* 设置段落底部的间距 */
-        text-align: center;
+        text-align: left;
     }
+  /* 居中对齐的段落 */
+  .center {
+      margin-top: 40px;   /* 设置段落顶部的间距 */
+      margin-bottom: 20px; /* 设置段落底部的间距 */
+      text-align: center;
+  }
 
 .custom-button i {
     margin-right: 8px;  /* 可选：给图标和文本之间添加间距 */
@@ -87,13 +93,13 @@ The recent advances in information technology and artificial intelligence have f
 
 <br><br>
 
-<center>
+<p class="center">
 <span class="m-text">
 <b>Method</b>
 </span>
-</center>
+</p>
 <!-- <br><br> -->
-<p>
+<p class="center">
 <span class="s-text">
 The physics-informed offline RL framework for energy-efficient DC cooling control
 </span>
@@ -107,16 +113,16 @@ The physics-informed offline RL framework for energy-efficient DC cooling contro
 
 <br><br>
 
-<center>
+<p class="center">
 <span class="m-text">
 <b>
 Experimental Results
 </b>
 </span>
-</center>
+</p>
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Significant energy efficiency improvement
 </span>
@@ -127,7 +133,7 @@ Comparison of conventional PID control and our approach under comparable server 
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Control quality
 </span>
@@ -150,7 +156,7 @@ We conducted two 24-hour experiments in the production DC environment to compare
     </div>
 </div>
 
-<br><br>
+<!-- <br><br> -->
 
 We conducted consecutive 48-hour experiments to compare the control behaviors of our method and the PID controllers in Server Room B with fluctuating server loads.
 
@@ -160,7 +166,7 @@ We conducted consecutive 48-hour experiments to compare the control behaviors of
 
 ![detailed_comp](./doc/detailed_comp.png)
 <!-- <center> -->
-<p>
+<p class="center">
 Comparisons of key system metrics and the controllable actions of our method and the PID controller over 2-day testing periods in Server Room B. Figures on the left show results from the PID-controlled period (May 13-15, 2024), and figures on the right are the results controlled by our method (June 29- July 1, 2024).
 </p>
 <!-- </center> -->
@@ -181,13 +187,13 @@ To verify the long-term robustness and energy-saving effectiveness of our method
 
 ![long_term](./doc/long_term_exp.png)
 
-<center>
+<p class="center">
 Results of the 14-day long-term experiments in Server Room B. <b>a</b>, ACLF values under different total server loads. <b>b, c,</b> Temperature distribution of the directly influenced hot and cold aisles.
-</center>
+</p>
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Impact of the number of controlled ACUs
 </span>
@@ -197,13 +203,13 @@ We also conducted additional experiments with our model controlling 1 to all ACU
 
 ![acu_num](./doc/acu_num_vary.png)
 
-<center>
+<p class="center">
 The energy-saving impact of controlling different numbers of ACUs through our approach.
-</center>
+</p>
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Good adaptability under drastic server load fluctuation
 </span>
@@ -213,13 +219,13 @@ To further evaluate the adaptability and load-awareness of our method, we tested
 
 ![load_fluctuate](./doc/load_fluctuate.png)
 
-<center>
+<p class="center">
 ACU control behaviors of our method and the PID controller under drastic server load fluctuation.  <b>a,</b> Load variation pattern of three server racks (Rack C, D, E) during the selected time period, with one server rack having a drastic load drop and increase. <b>b,</b> Temperature readings from the three most relevant cold aisle sensors.<b>c, d,</b> The variations in fan speed and valve opening for two ACUs during the time period, with one controlled by the PID controller (ACU 1-1) and the other by our method (ACU 1-2).
-</center>
+</p>
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Comparative evaluation against baseline methods
 </span>
@@ -231,23 +237,23 @@ We compare our method with competing baseline methods including conventional ind
 
 ![baseline](./doc/testbed_baseline_exp.png)
 
-<center>
+<p class="center">
 Comparative evaluation of our method against baseline methods on our real-world testbed.
-</center>
+</p>
 
 <br><br>
 
-<center>
+<p class="center">
 <span class="m-text">
 <b>
 System deployment in real-world
 </b>
 </span>
-</center>
+</p>
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Overall architecture of the deployment system
 </span>
@@ -265,7 +271,7 @@ We have developed a full-function software system to facilitate the deployment a
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Real-world testing environments
 </span>
@@ -278,11 +284,11 @@ Real-world testing environments
   <img src="./doc/dc_structure.png" alt="system" style="width: 80%;">
 </div>
 
-<center>
+<p class="center">
 <b>a,</b> Photographs of the interior of a server room, showcasing the hot aisle, cold aisle, and server racks from left to right. <b>b,</b> Overhead panoramic view of a server room, illustrating the spatial arrangement of all pertinent equipment.
-</center>
+</p>
 
-<br><br>
+<!-- <br><br> -->
 
 - **Real-world testbed**
 
@@ -293,13 +299,13 @@ Real-world testing environments
   <img src="./doc/testbed_scene_structure.png" alt="system" style="width: 80%;">
 </div>
 
-<center>
+<p class="center">
 <b>a</b>, Illustration of the installed temperature and humidity sensors in our testbed. <b>b,</b> Layout illustration of the testbed.
-</center>
+</p>
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Historical dataset distributions
 </span>
@@ -309,19 +315,19 @@ Below shows the historical dataset distributions collected from our real-world t
 
 ![testbed_data](./doc/testbed_state.jpg)
 
-<center>
+<p class="center">
 Distributions of the state and action features in our historical dataset collected from the real-world DC testbed.
-</center>
+</p>
 
 <br><br>
 
-<center>
+<p class="center">
 <span class="m-text">
 <b>
 Citation (BibTeX)
 </b>
 </span>
-</center>
+</p>
 
 ```
 @inproceedings{
