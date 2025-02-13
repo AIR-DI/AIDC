@@ -242,7 +242,10 @@ Overall architecture of the deployment system
 
 We have developed a full-function software system to facilitate the deployment and validation of our proposed physics-informed offline RL framework. The overall deployed system architecture is illustrated as below, which consists of two main phases: **offline training** and **online deployment**.
 
-![system](./doc/system_design.png)
+<!-- ![system](./doc/system_design.png) -->
+<div style="text-align: center;">
+  <img src="./doc/system_design.png" alt="system" style="width: 80%;">
+</div>
 
 - **Offline training**: the historical operational data of the floor-level cooling systems is exported from the DC log management system. The exported data undergoes automated data processing and feature engineering processes and is stored in a historical dataset. Then we train the T-symmetry enforced thermal dynamics model, followed by a sample-efficient offline policy learning module to obtain the optimized floor-level cooling control policy. 
 - **Online deployment**:  the learned policy is deployed in a local policy server within the data center to provide control services. Real-time data from the cooling systems is retrieved by the management system API, processed, and stored in a real-time database. The system then forwards the real-time data to the policy server, which outputs optimized ACU control actions. These optimized control actions are directly written into the ACUs via the Modbus protocol for closed-loop control.
@@ -257,7 +260,10 @@ Real-world testing environments
 
 - **Production data center envirnment**
 
-![dc](./doc/dc_structure.png)
+<!-- ![dc](./doc/dc_structure.png) -->
+<div style="text-align: center;">
+  <img src="./doc/dc_structure.png" alt="system" style="width: 80%;">
+</div>
 
 <center>
 <b>a,</b> Photographs of the interior of a server room, showcasing the hot aisle, cold aisle, and server racks from left to right. <b>b,</b> Overhead panoramic view of a server room, illustrating the spatial arrangement of all pertinent equipment.
@@ -269,7 +275,10 @@ Real-world testing environments
 
 > To thoroughly assess the performance of our proposed method, we also constructed a real-world testbed environment, which contains 22 servers and an inter-column air conditioner as the ACU (located between Rack 1 and Rack 2).  This is a compressor-based ACU, which is smaller than the typical ACUs in commercial data centers that use the cold water from chillers and cooling towers as the cold source. 
 
-![testbed](./doc/testbed_scene_structure.png)
+<!-- ![testbed](./doc/testbed_scene_structure.png) -->
+<div style="text-align: center;">
+  <img src="./doc/testbed_scene_structure.png" alt="system" style="width: 80%;">
+</div>
 
 <center>
 <b>a</b>, Illustration of the installed temperature and humidity sensors in our testbed. <b>b,</b> Layout illustration of the testbed.
