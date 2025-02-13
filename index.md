@@ -28,8 +28,9 @@ layout: default
     justify-content: center;
   }
   p {
-        margin-top: 30px;   /* 设置段落顶部的间距 */
+        margin-top: 40px;   /* 设置段落顶部的间距 */
         margin-bottom: 20px; /* 设置段落底部的间距 */
+        text-align: center;
     }
 
 .custom-button i {
@@ -90,13 +91,13 @@ The recent advances in information technology and artificial intelligence have f
 <span class="m-text">
 <b>Method</b>
 </span>
+</center>
 <!-- <br><br> -->
 <p>
 <span class="s-text">
 The physics-informed offline RL framework for energy-efficient DC cooling control
 </span>
 </p>
-</center>
 
 - A safety-aware reward function to balance energy saving and temperature regulation;
 - A special T-symmetry enforced thermal dynamics model (TTDM) to model and explain the fundamental thermal dynamics patterns inside the server room;
@@ -114,26 +115,23 @@ Experimental Results
 </span>
 </center>
 <!-- <br><br> -->
-<center>
+
 <p>
 <span class="s-text">
 Significant energy efficiency improvement
 </span>
 </p>
-</center>
 
 Comparison of conventional PID control and our approach under comparable server load settings on two server rooms of the commercial DC. “AEP” and “EC” denote average electric power and energy consumption, respectively. We use the offline RL policy to control 4, 6, and all the ACUs in each room. ACLF is the air-side cooling load factor, calculated as the ratio of energy consumption of ACUs to servers, the lower the better.
 ![table1](./doc/table.png)
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Control quality
 </span>
 </p>
-</center>
 
 We conducted two 24-hour experiments in the production DC environment to compare the temperature field distribution under the PID controller and our method. The tow videos below shows the visualization of temperature field changes during the two experiments. The temperature field distribution under the control of our model is more uniform and fluctuates less.
 
@@ -167,13 +165,11 @@ Comparisons of key system metrics and the controllable actions of our method and
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Long-term control performance
 </span>
 </p>
-</center>
 
 To verify the long-term robustness and energy-saving effectiveness of our method, we conducted two 14-day experiments by continuously running our offline RL policy and the PID controller on the 4 controllable ACUs in Server Room B.
 
@@ -189,13 +185,11 @@ Results of the 14-day long-term experiments in Server Room B. <b>a</b>, ACLF val
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Impact of the number of controlled ACUs
 </span>
 </p>
-</center>
 
 We also conducted additional experiments with our model controlling 1 to all ACUs to further investigate its energy-saving impact. **a** shows the experiment results conducted in seven morning periods (10:30- 13:30) in Server Room A; **b,c** on the right show the experiment results conducted in seven morning (10:30- 13:30) and afternoon (14:30- 17:30) periods in Server Room B. These promising results suggest that if more ACUs can be controlled by our method, it is very likely that we can achieve even higher energy efficiency.
 
@@ -207,13 +201,11 @@ The energy-saving impact of controlling different numbers of ACUs through our ap
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Good adaptability under drastic server load fluctuation
 </span>
 </p>
-</center>
 
 To further evaluate the adaptability and load-awareness of our method, we tested on a specific scenario with drastic server load fluctuations in Server Room B. The PID controller demonstrates limited adaptability in this scenario, with no adjustments to fan speeds and only marginal changes in valve opening percentage. In contrast, our offline RL approach was able to promptly adapt to external changes, resulting in a more optimal and energy-efficient strategy. These results underscore the effectiveness and adaptability of our approach in highly dynamic DC service conditions. 
 
@@ -225,13 +217,11 @@ ACU control behaviors of our method and the PID controller under drastic server 
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Comparative evaluation against baseline methods
 </span>
 </p>
-</center>
 
 As testing in the production DC environment suffers lots of restrictions, to further validate our method, we conducted extensive exploratory experiments and model ablations in our testbed environment.
 
@@ -255,13 +245,11 @@ System deployment in real-world
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Overall architecture of the deployment system
 </span>
 </p>
-</center>
 
 We have developed a full-function software system to facilitate the deployment and validation of our proposed physics-informed offline RL framework. The overall deployed system architecture is illustrated as below, which consists of two main phases: **offline training** and **online deployment**.
 
@@ -275,13 +263,11 @@ We have developed a full-function software system to facilitate the deployment a
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Real-world testing environments
 </span>
 </p>
-</center>
 
 - **Production data center envirnment**
 
@@ -311,13 +297,11 @@ Real-world testing environments
 
 <!-- <br><br> -->
 
-<center>
 <p>
 <span class="s-text">
 Historical dataset distributions
 </span>
 </p>
-</center>
 
 Below shows the historical dataset distributions collected from our real-world testbed, in which we collect system operational data from more diverse server load and control settings, resulting in relatively broader state-action space coverage than that of the production DCs. 
 
