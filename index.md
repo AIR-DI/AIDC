@@ -179,7 +179,10 @@ We conducted consecutive 48-hour experiments to compare the control behaviors of
 - Our method achieves significantly better temperature regulation for the hot aisle, indicating a more uniform and stable temperature field inside the hot aisle (HAT, hot aisle temperature).
 
 <!-- ![detailed_comp](./doc/detailed_comp.png) -->
+<div style="text-align: center;">
 <img src="./doc/detailed_comp.png" alt="detailed_comp" style="width: 100%;">
+</div>
+
 <!-- <center> -->
 <p class="title">
 Comparisons of key system metrics and the controllable actions of our method and the PID controller over 2-day testing periods in Server Room B. Figures on the left show results from the PID-controlled period (May 13-15, 2024), and figures on the right are the results controlled by our method (June 29- July 1, 2024).
@@ -201,7 +204,9 @@ To verify the long-term robustness and energy-saving effectiveness of our method
 - The potential of our method for safe and stable long-term deployment in real-world data centers.
 
 <!-- ![long_term](./doc/long_term_exp.png) -->
+<div style="text-align: center;">
 <img src="./doc/long_term_exp.png" alt="long_term" style="width: 100%;">
+</div>
 
 <p class="title">
 Results of the 14-day long-term experiments in Server Room B. <b>a</b>, ACLF values under different total server loads. <b>b, c,</b> Temperature distribution of the directly influenced hot and cold aisles.
@@ -220,7 +225,9 @@ We also conducted additional experiments with our model controlling 1 to all ACU
 </p>
 
 <!-- ![acu_num](./doc/acu_num_vary.png) -->
+<div style="text-align: center;">
 <img src="./doc/acu_num_vary.png" alt="acu_num" style="width: 100%;">
+</div>
 
 <p class="title">
 The energy-saving impact of controlling different numbers of ACUs through our approach.
@@ -239,7 +246,9 @@ To further evaluate the adaptability and load-awareness of our method, we tested
 </p>
 
 <!-- ![load_fluctuate](./doc/load_fluctuate.png) -->
+<div style="text-align: center;">
 <img src="./doc/load_fluctuate.png" alt="load_fluctuate" style="width: 100%;">
+</div>
 
 <p class="title">
 ACU control behaviors of our method and the PID controller under drastic server load fluctuation.  <b>a,</b> Load variation pattern of three server racks (Rack C, D, E) during the selected time period, with one server rack having a drastic load drop and increase. <b>b,</b> Temperature readings from the three most relevant cold aisle sensors.<b>c, d,</b> The variations in fan speed and valve opening for two ACUs during the time period, with one controlled by the PID controller (ACU 1-1) and the other by our method (ACU 1-2).
@@ -260,7 +269,9 @@ We compare our method with competing baseline methods including conventional ind
 </p>
 
 <!-- ![baseline](./doc/testbed_baseline_exp.png) -->
+<div style="text-align: center;">
 <img src="./doc/testbed_baseline_exp.png" alt="baseline" style="width: 100%;">
+</div>
 
 <p class="title">
 Comparative evaluation of our method against baseline methods on our real-world testbed.
@@ -341,7 +352,9 @@ Below shows the historical dataset distributions collected from our real-world t
 </p>
 
 <!-- ![testbed_data](./doc/testbed_state.jpg) -->
+<div style="text-align: center;">
 <img src="./doc/testbed_state.jpg" alt="testbed_data" style="width: 100%;">
+</div>
 
 <p class="title">
 Distributions of the state and action features in our historical dataset collected from the real-world DC testbed.
