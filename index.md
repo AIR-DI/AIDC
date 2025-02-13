@@ -45,7 +45,7 @@ layout: default
       text-align: center;
   }
   img {
-        margin-bottom: 10px; /* 图片和下面文字之间的间距 */
+        margin-bottom: 5px; /* 图片和下面文字之间的间距 */
     }
 
 .custom-button i {
