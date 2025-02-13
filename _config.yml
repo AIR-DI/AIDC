@@ -5,3 +5,5 @@ plugins:
   - jekyll-livereload
 
 livereload: true
+
+favicon: ./doc/icon.png

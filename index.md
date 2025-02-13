@@ -45,7 +45,7 @@ layout: default
       text-align: center;
   }
   img {
-        margin-bottom: 20px; /* 图片和下面文字之间的间距 */
+        margin-bottom: 10px; /* 图片和下面文字之间的间距 */
     }
 
 .custom-button i {
@@ -53,7 +53,7 @@ layout: default
   }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="icon" href="./doc/icon.png" type="image/png">
+<link rel="icon" href="{{ site.favicon }}" type="image/x-icon">
 
 <center>
 <span class="l-text">
