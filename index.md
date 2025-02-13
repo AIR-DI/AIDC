@@ -38,6 +38,12 @@ layout: default
       margin-bottom: 20px; /* 设置段落底部的间距 */
       text-align: center;
   }
+  /* 图片表格标题 */
+  .title {
+      margin-top: 20px;   /* 设置段落顶部的间距 */
+      margin-bottom: 20px; /* 设置段落底部的间距 */
+      text-align: center;
+  }
 
 .custom-button i {
     margin-right: 8px;  /* 可选：给图标和文本之间添加间距 */
@@ -139,7 +145,9 @@ Control quality
 </span>
 </p>
 
+<p>
 We conducted two 24-hour experiments in the production DC environment to compare the temperature field distribution under the PID controller and our method. The tow videos below shows the visualization of temperature field changes during the two experiments. The temperature field distribution under the control of our model is more uniform and fluctuates less.
+</p>
 
 <div style="display: flex; justify-content: space-between; gap: 15px;">
     <div style="text-align: center;">
@@ -158,7 +166,9 @@ We conducted two 24-hour experiments in the production DC environment to compare
 
 <!-- <br><br> -->
 
+<p>
 We conducted consecutive 48-hour experiments to compare the control behaviors of our method and the PID controllers in Server Room B with fluctuating server loads.
+</p>
 
 - The total server load fluctuated at a similar level, but our method consistently achieved noticeably lower ACLF value than that of the PID controller, indicating higher energy efficiency;
 - Our method tends to lower the fan speeds while slightly increasing the cold water valve openings, which helps reduce ACU energy consumption while maintaining the same level of cooling capacity.
@@ -166,14 +176,14 @@ We conducted consecutive 48-hour experiments to compare the control behaviors of
 
 ![detailed_comp](./doc/detailed_comp.png)
 <!-- <center> -->
-<p class="center">
+<p class="title">
 Comparisons of key system metrics and the controllable actions of our method and the PID controller over 2-day testing periods in Server Room B. Figures on the left show results from the PID-controlled period (May 13-15, 2024), and figures on the right are the results controlled by our method (June 29- July 1, 2024).
 </p>
 <!-- </center> -->
 
 <!-- <br><br> -->
 
-<p>
+<p class="center">
 <span class="s-text">
 Long-term control performance
 </span>
@@ -187,7 +197,7 @@ To verify the long-term robustness and energy-saving effectiveness of our method
 
 ![long_term](./doc/long_term_exp.png)
 
-<p class="center">
+<p class="title">
 Results of the 14-day long-term experiments in Server Room B. <b>a</b>, ACLF values under different total server loads. <b>b, c,</b> Temperature distribution of the directly influenced hot and cold aisles.
 </p>
 
@@ -199,11 +209,13 @@ Impact of the number of controlled ACUs
 </span>
 </p>
 
+<p>
 We also conducted additional experiments with our model controlling 1 to all ACUs to further investigate its energy-saving impact. **a** shows the experiment results conducted in seven morning periods (10:30- 13:30) in Server Room A; **b,c** on the right show the experiment results conducted in seven morning (10:30- 13:30) and afternoon (14:30- 17:30) periods in Server Room B. These promising results suggest that if more ACUs can be controlled by our method, it is very likely that we can achieve even higher energy efficiency.
+</p>
 
 ![acu_num](./doc/acu_num_vary.png)
 
-<p class="center">
+<p class="title">
 The energy-saving impact of controlling different numbers of ACUs through our approach.
 </p>
 
@@ -215,11 +227,13 @@ Good adaptability under drastic server load fluctuation
 </span>
 </p>
 
+<p>
 To further evaluate the adaptability and load-awareness of our method, we tested on a specific scenario with drastic server load fluctuations in Server Room B. The PID controller demonstrates limited adaptability in this scenario, with no adjustments to fan speeds and only marginal changes in valve opening percentage. In contrast, our offline RL approach was able to promptly adapt to external changes, resulting in a more optimal and energy-efficient strategy. These results underscore the effectiveness and adaptability of our approach in highly dynamic DC service conditions. 
+</p>
 
 ![load_fluctuate](./doc/load_fluctuate.png)
 
-<p class="center">
+<p class="title">
 ACU control behaviors of our method and the PID controller under drastic server load fluctuation.  <b>a,</b> Load variation pattern of three server racks (Rack C, D, E) during the selected time period, with one server rack having a drastic load drop and increase. <b>b,</b> Temperature readings from the three most relevant cold aisle sensors.<b>c, d,</b> The variations in fan speed and valve opening for two ACUs during the time period, with one controlled by the PID controller (ACU 1-1) and the other by our method (ACU 1-2).
 </p>
 
@@ -231,13 +245,15 @@ Comparative evaluation against baseline methods
 </span>
 </p>
 
+<p>
 As testing in the production DC environment suffers lots of restrictions, to further validate our method, we conducted extensive exploratory experiments and model ablations in our testbed environment.
 
 We compare our method with competing baseline methods including conventional industrial control methods PID and MPC, off-policy RL-based DC cooling optimization method CCA, mainstream offline RL algorithms IQL and CQL, and the state-of-the-art safe offline RL algorithm FISOR. Some aggressive baseline methods (CCA and CQL) achieve lower energy consumption but perform poorly in terms of thermal safety, which is unacceptable. By contrast, our method achieved the highest energy efficiency under all load conditions, while ensuring no CAT violations throughout the experiments, outperforming all other baseline methods. 
+</p>
 
 ![baseline](./doc/testbed_baseline_exp.png)
 
-<p class="center">
+<p class="title">
 Comparative evaluation of our method against baseline methods on our real-world testbed.
 </p>
 
@@ -284,7 +300,7 @@ Real-world testing environments
   <img src="./doc/dc_structure.png" alt="system" style="width: 80%;">
 </div>
 
-<p class="center">
+<p class="title">
 <b>a,</b> Photographs of the interior of a server room, showcasing the hot aisle, cold aisle, and server racks from left to right. <b>b,</b> Overhead panoramic view of a server room, illustrating the spatial arrangement of all pertinent equipment.
 </p>
 
@@ -299,7 +315,7 @@ Real-world testing environments
   <img src="./doc/testbed_scene_structure.png" alt="system" style="width: 80%;">
 </div>
 
-<p class="center">
+<p class="title">
 <b>a</b>, Illustration of the installed temperature and humidity sensors in our testbed. <b>b,</b> Layout illustration of the testbed.
 </p>
 
@@ -311,11 +327,13 @@ Historical dataset distributions
 </span>
 </p>
 
+<p>
 Below shows the historical dataset distributions collected from our real-world testbed, in which we collect system operational data from more diverse server load and control settings, resulting in relatively broader state-action space coverage than that of the production DCs. 
+</p>
 
 ![testbed_data](./doc/testbed_state.jpg)
 
-<p class="center">
+<p class="title">
 Distributions of the state and action features in our historical dataset collected from the real-world DC testbed.
 </p>
 
