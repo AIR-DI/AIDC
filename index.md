@@ -159,9 +159,11 @@ We conducted consecutive 48-hour experiments to compare the control behaviors of
 - Our method achieves significantly better temperature regulation for the hot aisle, indicating a more uniform and stable temperature field inside the hot aisle (HAT, hot aisle temperature).
 
 ![detailed_comp](./doc/detailed_comp.png)
-<center>
+<!-- <center> -->
+<p>
 Comparisons of key system metrics and the controllable actions of our method and the PID controller over 2-day testing periods in Server Room B. Figures on the left show results from the PID-controlled period (May 13-15, 2024), and figures on the right are the results controlled by our method (June 29- July 1, 2024).
-</center>
+</p>
+<!-- </center> -->
 
 <!-- <br><br> -->
 
