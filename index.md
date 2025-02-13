@@ -127,13 +127,13 @@ We conducted two 24-hour experiments in the production DC environment to compare
 <div style="display: flex; justify-content: space-between; gap: 15px;">
     <div style="text-align: center;">
         <h3 style="font-size: 12px; color: blue">PID Controller<br>2024-05-14 00:00 – 24:00</h3>
-        <video width="100%" controls autoplay loop>
+        <video width="100%" autoplay controls loop playsinline muted>
             <source src="./doc/pid_401_0514_x3.mp4" type="video/mp4">
         </video>
     </div>
     <div style="text-align: center; color: green">
         <h3 style="font-size: 12px;">Ours<br>2024-06-30 00:00 – 24:00</h3>
-        <video width="100%" controls autoplay loop>
+        <video width="100%" autoplay controls loop playsinline muted>
             <source src="./doc/ai_401_0630_x3.mp4" type="video/mp4">
         </video>
     </div>
