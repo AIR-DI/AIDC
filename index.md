@@ -34,7 +34,7 @@ layout: default
     }
   /* 居中对齐的段落 */
   .center {
-      margin-top: 40px;   /* 设置段落顶部的间距 */
+      margin-top: 50px;   /* 设置段落顶部的间距 */
       margin-bottom: 20px; /* 设置段落底部的间距 */
       text-align: center;
   }
