@@ -41,7 +41,7 @@ layout: default
   /* 图片表格标题 */
   .title {
       margin-top: 0px;   /* 设置段落顶部的间距 */
-      margin-bottom: 20px; /* 设置段落底部的间距 */
+      margin-bottom: 30px; /* 设置段落底部的间距 */
       text-align: center;
   }
   img {
