@@ -27,7 +27,7 @@ layout: default
     align-items: center;
     justify-content: center;
   p {
-        margin-top: 30px;   /* 设置段落顶部的间距 */
+        margin-top: 50px;   /* 设置段落顶部的间距 */
         margin-bottom: 20px; /* 设置段落底部的间距 */
     }
   }
