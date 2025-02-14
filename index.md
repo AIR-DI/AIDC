@@ -34,14 +34,14 @@ layout: default
     }
   /* 居中对齐的段落 */
   .center {
-      margin-top: 50px;   /* 设置段落顶部的间距 */
+      margin-top: 40px;   /* 设置段落顶部的间距 */
       margin-bottom: 20px; /* 设置段落底部的间距 */
       text-align: center;
   }
   /* 图片表格标题 */
   .title {
       margin-top: 0px;   /* 设置段落顶部的间距 */
-      margin-bottom: 40px; /* 设置段落底部的间距 */
+      margin-bottom: 0px; /* 设置段落底部的间距 */
       text-align: center;
   }
   img {
@@ -175,7 +175,7 @@ We conducted consecutive 48-hour experiments to compare the control behaviors of
 </p>
 
 - The total server load fluctuated at a similar level, but our method consistently achieved noticeably lower ACLF value than that of the PID controller, indicating higher energy efficiency;
-- Our method tends to lower the fan speeds while slightly increasing the cold water valve openings, which helps reduce ACU energy consumption while maintaining the same level of cooling capacity.
+- Our method tends to lower the fan speeds while slightly increasing the cold water valve openings, which helps reduce ACU energy consumption while maintaining the same level of cooling capacity;
 - Our method achieves significantly better temperature regulation for the hot aisle, indicating a more uniform and stable temperature field inside the hot aisle (HAT, hot aisle temperature).
 
 <!-- ![detailed_comp](./doc/detailed_comp.png) -->
@@ -221,7 +221,7 @@ Impact of the number of controlled ACUs
 </p>
 
 <p>
-We also conducted additional experiments with our model controlling 1 to all ACUs to further investigate its energy-saving impact. **a** shows the experiment results conducted in seven morning periods (10:30- 13:30) in Server Room A; **b,c** on the right show the experiment results conducted in seven morning (10:30- 13:30) and afternoon (14:30- 17:30) periods in Server Room B. These promising results suggest that if more ACUs can be controlled by our method, it is very likely that we can achieve even higher energy efficiency.
+We also conducted additional experiments with our model controlling 1 to all ACUs to further investigate its energy-saving impact. <b>a</b> shows the experiment results conducted in seven morning periods (10:30- 13:30) in Server Room A; <b>b,c</b> on the right show the experiment results conducted in seven morning (10:30- 13:30) and afternoon (14:30- 17:30) periods in Server Room B. These promising results suggest that if more ACUs can be controlled by our method, it is very likely that we can achieve even higher energy efficiency.
 </p>
 
 <!-- ![acu_num](./doc/acu_num_vary.png) -->
@@ -251,7 +251,7 @@ To further evaluate the adaptability and load-awareness of our method, we tested
 </div>
 
 <p class="title">
-ACU control behaviors of our method and the PID controller under drastic server load fluctuation.  <b>a,</b> Load variation pattern of three server racks (Rack C, D, E) during the selected time period, with one server rack having a drastic load drop and increase. <b>b,</b> Temperature readings from the three most relevant cold aisle sensors.<b>c, d,</b> The variations in fan speed and valve opening for two ACUs during the time period, with one controlled by the PID controller (ACU 1-1) and the other by our method (ACU 1-2).
+ACU control behaviors of our method and the PID controller under drastic server load fluctuation.  <b>a,</b> Load variation pattern of three server racks (Rack C, D, E) during the selected time period, with one server rack having a drastic load drop and increase. <b>b,</b> Temperature readings from the three most relevant cold aisle sensors. <b>c, d,</b> The variations in fan speed and valve opening for two ACUs during the time period, with one controlled by the PID controller (ACU 1-1) and the other by our method (ACU 1-2).
 </p>
 
 <!-- <br><br> -->
