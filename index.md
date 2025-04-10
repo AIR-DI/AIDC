@@ -402,8 +402,10 @@ url={https://arxiv.org/html/2501.15085v1}
 </div>
 
 
+<br><br>
+
 <!-- Recruitment Section -->
-<section id="join-us" style="padding: 3rem 1rem; background-color: #f9f9f9;">
+<!-- <section id="join-us" style="padding: 3rem 1rem; background-color: #f9f9f9;">
   <div style="max-width: 800px; margin: auto;">
     <h2 style="text-align: center; margin-bottom: 1rem;">Join Us and Shape the Future!</h2>
     <p>
@@ -425,4 +427,48 @@ url={https://arxiv.org/html/2501.15085v1}
       Send your resume to <a href="mailto:zhanxianyuan@air.tsinghua.edu.cn">zhanxianyuan@air.tsinghua.edu.cn</a>, with the subject: <strong>"Application + Position + Name"</strong>.
     </p>
   </div>
+</section> -->
+<section id="join-us" style="
+  background: #f8f9fa;
+  padding: 60px 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  border-top: 2px solid #007acc;
+">
+  <h2 style="font-size: 2rem; color: #007acc; margin-bottom: 16px;">🚀 Join Us and Shape the Future</h2>
+  <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 30px;">
+    The <strong>Tsinghua AIR</strong> team is transforming cutting-edge AI research into real-world impact.
+    We're building an AI-driven industrial intelligence startup and looking for passionate talents to join us.
+  </p>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 900px; margin: 0 auto 40px;">
+    <div style="flex: 1 1 250px; background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+      <h3 style="color: #007acc;">📊 Research Scientist</h3>
+      <p style="font-size: 0.95rem;">Focus: Reinforcement Learning / Optimal Control</p>
+    </div>
+    <div style="flex: 1 1 250px; background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+      <h3 style="color: #007acc;">💻 Software Engineer</h3>
+      <p style="font-size: 0.95rem;">Focus: Industrial Intelligence Systems</p>
+    </div>
+    <div style="flex: 1 1 250px; background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+      <h3 style="color: #007acc;">🎓 Intern</h3>
+      <p style="font-size: 0.95rem;">Background: AI / Industrial Optimization</p>
+    </div>
+    <div style="flex: 1 1 250px; background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px;">
+      <h3 style="color: #007acc;">📦 Product Manager</h3>
+      <p style="font-size: 0.95rem;">Focus: Industrial System Optimization</p>
+    </div>
+  </div>
+
+  <p style="font-size: 1rem; max-width: 700px; margin: 0 auto 20px;">
+    If you're passionate about AI, RL, and real-world optimization, we offer an exciting platform for impactful projects. Let’s advance AI-driven decision optimization together — for a smarter and greener future.
+  </p>
+
+  <p style="font-size: 1rem; margin-bottom: 20px;">
+    📩 <strong>Apply by sending your resume to</strong>:<br>
+    <a href="mailto:zhanxianyuan@air.tsinghua.edu.cn" style="color: #007acc; font-weight: bold;">
+      zhanxianyuan@air.tsinghua.edu.cn
+    </a><br>
+    (Subject: "Application + Position + Name")
+  </p>
 </section>
