@@ -381,3 +381,35 @@ year={2025},
 url={https://arxiv.org/html/2501.15085v1}
 }
 ```
+
+<!-- Hiring Banner -->
+<div style="background-color: #f0f8ff; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
+  <h2 style="margin-bottom: 0.5rem;">🚀 Join Us and Shape the Future!</h2>
+  <p style="font-size: 1.1rem;">We're hiring talented individuals passionate about AI and real-world impact.</p>
+  <a href="#join-us" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background-color: #007acc; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">See Open Positions</a>
+</div>
+
+<!-- Recruitment Section -->
+<section id="join-us" style="padding: 3rem 1rem; background-color: #f9f9f9;">
+  <div style="max-width: 800px; margin: auto;">
+    <h2 style="text-align: center; margin-bottom: 1rem;">Join Us and Shape the Future!</h2>
+    <p>
+      The Tsinghua AIR team is advancing this technology into industry applications and seeks talented individuals to join our AI-driven industrial intelligence startup.
+      If you're passionate about AI, reinforcement learning, and real-world optimization, we offer an exciting platform for impactful projects.
+    </p>
+    <p>
+      We welcome algorithm engineers, system developers, and researchers interested in AI-driven industrial intelligence. Let’s push forward AI-driven decision optimization and drive efficiency and sustainability in industrial and energy-intensive systems.
+    </p>
+    <h3>Open Positions:</h3>
+    <ul>
+      <li>Research Scientist (Reinforcement Learning / Optimal Control)</li>
+      <li>Software Engineer (Industrial Intelligence Systems)</li>
+      <li>Internship (AI / Industrial Intelligence)</li>
+      <li>Product Manager (Industrial System Optimization)</li>
+    </ul>
+    <h3>Contact:</h3>
+    <p>
+      Send your resume to <a href="mailto:zhanxianyuan@air.tsinghua.edu.cn">zhanxianyuan@air.tsinghua.edu.cn</a>, with the subject: <strong>"Application + Position + Name"</strong>.
+    </p>
+  </div>
+</section>
