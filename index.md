@@ -382,12 +382,25 @@ url={https://arxiv.org/html/2501.15085v1}
 }
 ```
 
-<!-- Hiring Banner -->
-<div style="background-color: #f0f8ff; padding: 1.5rem; border-radius: 12px; text-align: center; margin: 3rem 0;">
-  <h2 style="margin-bottom: 0.5rem;">🚀 Join Us and Shape the Future!</h2>
-  <p style="font-size: 1.1rem;">We're hiring talented individuals passionate about AI and real-world impact.</p>
-  <a href="#join-us" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background-color: #007acc; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">See Open Positions</a>
+<!-- Fixed Bottom Recruitment Banner -->
+<div id="recruitment-banner" style="
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 1rem;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+">
+  <span style="position: absolute; right: 16px; top: 8px; cursor: pointer;" onclick="document.getElementById('recruitment-banner').style.display='none'">✕</span>
+  🚀 <strong>We're Hiring!</strong> Join our AI industrial startup —
+  <a href="#join-us" style="color: #ffd700; font-weight: bold; text-decoration: underline;">See Open Positions</a>
 </div>
+
 
 <!-- Recruitment Section -->
 <section id="join-us" style="padding: 3rem 1rem; background-color: #f9f9f9;">
