@@ -48,8 +48,59 @@ layout: default
         margin-bottom: 5px; /* 图片和下面文字之间的间距 */
     }
 
-.custom-button i {
+  .custom-button i {
     margin-right: 8px;  /* 可选：给图标和文本之间添加间距 */
+  }
+
+  #join-us {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border-top: 2px solid #007acc;
+  }
+
+  #join-us h2 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 16px;
+  }
+
+  #join-us .role-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+
+  #join-us .role-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  #join-us .role-card h3 {
+    color: #007acc;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    #join-us .role-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #join-us .contact-info {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  #join-us .contact-info a {
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
   }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -428,7 +479,8 @@ url={https://arxiv.org/html/2501.15085v1}
     </p>
   </div>
 </section> -->
-<section id="join-us" style="
+
+<!-- <section id="join-us" style="
   background: #f8f9fa;
   padding: 60px 20px;
   font-family: 'Helvetica Neue', sans-serif;
@@ -471,4 +523,94 @@ url={https://arxiv.org/html/2501.15085v1}
     </a><br>
     (Subject: "Application + Position + Name")
   </p>
+</section> -->
+
+<!-- <style>
+  #join-us {
+    background: #f8f9fa;
+    padding: 60px 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    border-top: 2px solid #007acc;
+  }
+
+  #join-us h2 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 16px;
+  }
+
+  #join-us .role-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+
+  #join-us .role-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  #join-us .role-card h3 {
+    color: #007acc;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    #join-us .role-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #join-us .contact-info {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  #join-us .contact-info a {
+    color: #007acc;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style> -->
+
+<section id="join-us">
+  <h2>🚀 Join Us and Shape the Future</h2>
+  <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 30px;">
+    The <strong>Tsinghua AIR</strong> team is transforming cutting-edge AI research into real-world impact.
+    We're building an AI-driven industrial intelligence startup and looking for passionate talents to join us.
+  </p>
+
+  <div class="role-grid">
+    <div class="role-card">
+      <h3>📊 Research Scientist</h3>
+      <p>Focus: Reinforcement Learning / Optimal Control</p>
+    </div>
+    <div class="role-card">
+      <h3>💻 Software Engineer</h3>
+      <p>Focus: Industrial Intelligence Systems</p>
+    </div>
+    <div class="role-card">
+      <h3>🎓 Intern</h3>
+      <p>Background: AI / Industrial Optimization</p>
+    </div>
+    <div class="role-card">
+      <h3>📦 Product Manager</h3>
+      <p>Focus: Industrial System Optimization</p>
+    </div>
+  </div>
+
+  <p style="font-size: 1rem; max-width: 700px; margin: 0 auto 20px;">
+    If you're passionate about AI, RL, and real-world optimization, we offer an exciting platform for impactful projects. Let’s advance AI-driven decision optimization together — for a smarter and greener future.
+  </p>
+
+  <div class="contact-info">
+    <p>📩 <strong>Apply by sending your resume to:</strong>
+      <a href="mailto:zhanxianyuan@air.tsinghua.edu.cn">zhanxianyuan@air.tsinghua.edu.cn</a>
+    (Subject: "Application + Position + Name")</p>
+  </div>
 </section>
