@@ -128,8 +128,8 @@ Using Offline Reinforcement Learning
 <b>Publication:</b> The Thirteenth International Conference on Learning Representations (ICLR 2025) 
 <br>
 <!-- <a href="https://arxiv.org/html/2501.15085v1">📄 论文链接</a> -->
-<a href="https://arxiv.org/html/2501.15085v1" class="external-link button is-normal is-rounded custom-button" target="_blank">
-    <i class="fas fa-file-pdf"></i> arXiv
+<a href="https://openreview.net/pdf?id=W8xukd70cU" class="external-link button is-normal is-rounded custom-button" target="_blank">
+    <i class="fas fa-file-pdf"></i> Paper
 </a>
 </span>
 </center>
